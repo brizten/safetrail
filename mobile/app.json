@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "TrailSafe Mobile",
+    "slug": "trailsafe-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "trailsafe",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.trailsafe.mobile",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "TrailSafe использует геолокацию только по вашему запросу, чтобы подготовить SOS-сообщение с координатами."
+      }
+    },
+    "android": {
+      "package": "com.trailsafe.mobile",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#EAF5EE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
