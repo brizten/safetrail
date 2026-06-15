@@ -2,6 +2,8 @@
 
 Мобильный MVP TrailSafe на Expo/React Native. Работает на Android и iPhone из одной кодовой базы.
 
+Проект закреплён на Expo SDK 54, чтобы открываться в Expo Go из App Store/Google Play.
+
 ## Запуск на телефоне
 
 1. Установите Expo Go:
@@ -18,6 +20,15 @@ npm run start
 3. Отсканируйте QR-код:
    - Android: камерой или Expo Go;
    - iPhone: камерой или Expo Go.
+
+Если Expo Go пишет `Project is incompatible with this version of Expo Go`, очистите кэш Metro и запустите заново:
+
+```powershell
+cd mobile
+npx expo start -c
+```
+
+После этого заново отсканируйте QR-код.
 
 ## Запуск на эмуляторе
 
